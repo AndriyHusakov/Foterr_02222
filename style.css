@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    width: 1440px;
+    height: 125px;
+    background: #74C69D;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-tex {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Work Sans';
+}
+
+
+@media(max-width: 376px) {
+    .footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 376px;
+        height: 125px;
+    }
+}
