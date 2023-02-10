@@ -3,9 +3,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .footer {
+    position: absolute;
     width: 1440px;
     height: 125px;
     background: #74C69D;
@@ -29,11 +31,41 @@
 
 @media(max-width: 376px) {
     .footer {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
+        gap: 0;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
         width: 376px;
         height: 125px;
+    }
+}
+
+@media(max-width: 550px) {
+    .footer {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0;
+        flex-direction: column;
+        width: 550px;
+    }
+}
+
+
+@media(max-width: 750px) {
+    .footer {
+        flex-wrap: wrap;
+        justify-items: space-between;
+        width: 750px;
+    }
+}
+
+
+@media(max-width: 1020px) {
+    .footer {
+        flex-wrap: wrap;
+        justify-items: space-between;
+        width: 1020px;
     }
 }
